@@ -22,8 +22,9 @@
         "chai-things": "^0.2.0",
         "@accordproject/cicero-core": "^0.3.17",
         "@accordproject/cicero-engine": "^0.3.17",
+        "@accordproject/cicero-cli": "^0.3.17",
         "lodash": "4.17.10",
-        "mocha": "^4.0.1",
-        "moment": "^2.19.2"
+        "mocha": "^5.1.1",
+        "moment": "^2.20.1"
     }
 }
