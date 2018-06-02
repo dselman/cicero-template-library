@@ -1,0 +1,43 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+namespace org.accordproject.fragileGoods
+
+contract FragileGoods over TemplateModel {
+  clause fragilegoods(request : DeliveryUpdate) : PayOut {
+    define variable amount = contract.deliveryPrice;
+    define variable shocks =
+      count(
+        foreach r in request.accelerometerReadings
+        where r > contract.accelerationMax or r < contract.accelerationMin
+        return r
+      );
+    define variable amount = amount - shocks * contract.accelerationBreachPenalty;
+
+    enforce request.status = "ARRIVED" and request.finishTime != nil
+    else return new PayOut{ amount: amount };
+
+    match request.finishTime
+    with let finishTime? then
+      if contract.deliveryLimitDuration.unit = "seconds"
+      then
+        define variable duration = momentDiffSeconds(finishTime, request.startTime);
+        if (duration) > contract.deliveryLimitDuration.amount
+        then return new PayOut{ amount: amount - contract.lateDeliveryPenalty }
+        else return new PayOut{ amount: amount, dur: duration }
+      else throw new Error{ message: "Unit not implemented" }
+    else throw new Error{ message: "Finish time not present" }
+  }
+}
+

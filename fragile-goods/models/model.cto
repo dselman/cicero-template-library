@@ -1,4 +1,4 @@
-namespace io.clause.demo.fragileGoods
+namespace org.accordproject.fragileGoods
 
 /**
  * A duration. For example, 6 hours.

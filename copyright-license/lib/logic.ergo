@@ -19,7 +19,7 @@ import org.accordproject.copyrightlicense.*
 contract CopyrightLicense over TemplateModel {
    // Clause for volume discount
   clause paymentClause(request : PaymentRequest) : PayOut {
-	  return new PayOut{ amount: clause.amount }
+    return new PayOut{ amount: clause.amount }
   }
 }
 

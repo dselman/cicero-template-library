@@ -46,7 +46,7 @@ describe('Logic', () => {
 
         it('should execute a completed delivery contract with all deductions', async function () {
             const request = {
-                "$class":"io.clause.demo.fragileGoods.DeliveryUpdate",
+                "$class":"org.accordproject.fragileGoods.DeliveryUpdate",
                 "startTime":"2018-01-01T16:34:00.000Z",
                 "finishTime":"2018-01-01T16:34:11.000Z",
                 "status":"ARRIVED",
@@ -64,7 +64,7 @@ describe('Logic', () => {
 
         it('should execute an inflight delivery contract', async function () {
             const request = {
-                "$class":"io.clause.demo.fragileGoods.DeliveryUpdate",
+                "$class":"org.accordproject.fragileGoods.DeliveryUpdate",
                 "startTime":"2018-01-01T16:34:00.000Z",
                 //"finishTime":"2018-01-01T16:34:11.000Z",
                 "status":"IN_TRANSIT",
@@ -82,7 +82,7 @@ describe('Logic', () => {
 
         it('should execute a completed on-time delivery contract with breaches', async function () {
             const request = {
-                "$class":"io.clause.demo.fragileGoods.DeliveryUpdate",
+                "$class":"org.accordproject.fragileGoods.DeliveryUpdate",
                 "startTime":"2018-01-01T16:34:00.000Z",
                 "finishTime":"2018-01-01T16:34:09.000Z",
                 "status":"ARRIVED",
@@ -100,7 +100,7 @@ describe('Logic', () => {
 
         it('should execute a completed delivery contact with no deductions', async function () {
             const request = {
-                "$class":"io.clause.demo.fragileGoods.DeliveryUpdate",
+                "$class":"org.accordproject.fragileGoods.DeliveryUpdate",
                 "startTime":"2018-01-01T16:34:00.000Z",
                 "finishTime":"2018-01-01T16:34:09.000Z",
                 "status":"ARRIVED",
