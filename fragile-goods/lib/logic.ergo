@@ -35,7 +35,7 @@ contract FragileGoods over TemplateModel {
         define variable duration = momentDiffSeconds(finishTime, request.startTime);
         if (duration) > contract.deliveryLimitDuration.amount
         then return new PayOut{ amount: amount - contract.lateDeliveryPenalty }
-        else return new PayOut{ amount: amount, dur: duration }
+        else return new PayOut{ amount: amount }
       else throw new Error{ message: "Unit not implemented" }
     else throw new Error{ message: "Finish time not present" }
   }
