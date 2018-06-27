@@ -444,5 +444,15 @@
         "ciceroVersion": "^0.4.4",
         "type": 0,
         "language": 0
+    },
+    "landsale@0.0.1": {
+        "uri": "ap://landsale@0.0.1#b95a8d9de0054e9e07067d896430625725eef12a0a507b51d2e4fca8d6f4863b",
+        "url": "https://templates.accordproject.org/archives/landsale@0.0.1.cta",
+        "name": "landsale",
+        "description": "A landsale contract between an individual buys and seller.",
+        "version": "0.0.1",
+        "ciceroVersion": "^0.4.4",
+        "type": 0,
+        "language": 0
     }
 }

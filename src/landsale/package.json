@@ -1,0 +1,10 @@
+{
+    "name": "landsale",
+    "version": "0.0.1",
+    "description": "A landsale contract between an individual buys and seller.",
+    "cicero": {
+        "template": "contract",
+        "language": "ergo",
+        "version": "^0.4.4"
+    }
+}

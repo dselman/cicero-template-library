@@ -1,0 +1,32 @@
+LAND SALE CONTRACT
+
+The first party (henceforth known as “Buyer”) agrees to purchase from the second party (henceforth known as “Seller”) the land (henceforth known as “Land”) located at the following address: [{address}], in the city of [{city}], county of [{county}], and State of [{state}]. Further legal description of the Land is as follows:
+
+[{details}]
+
+This Contract is executed on [{executionDate}].
+
+The following terms and conditions apply to this Contract:
+
+1.	Price: Buyer agrees to purchase the Land described above, paying a total purchase price of [{amount}]. Buyer will pay [{downpayment}] for a down payment, and thereafter payments will be made monthly. Monthly installments will be in the amount of [{monthlyPayment}], including a [{interestRate}]% interest rate, to be determined by [{interestRateCalculationMechanism}]. Said payments will start on the [{firstPaymentDate}], and be due on the [{paymentDayOfMonth}] of every month until such time as the entire payment amount has been satisfied. 
+
+2.	Late fees: Buyer agrees to pay the monthly installment on the due date, with the understanding that a [{lateFee}] late fee will be added to the monthly payment if said payment is more than [{daysLate}] days late.
+
+3.	End of contract: The entire balance must be paid by the [{endOfContract}]. If there is a remaining balance on this date, the interest on said balance shall be [{endPercentage}]%, with a [{endLateFee}] late fee applied every [{latePaymentDuration}] until the balance is paid in full.
+
+4.	Default: If Buyer does not pay [{missedPayments}] payments on time, Seller has the right to declare Buyer in default of this Contract.
+
+5.	Title: Upon final payment, when entire purchase price has been paid in full, Buyer agrees to provide Seller with the title(s) and/or deed(s) to the Land. Seller further agrees to relinquish any and all claims to the Land. Buyer agrees to remove Seller from any liability with regard to issues that arise after the date of the title transfer. Buyer agrees to take complete responsibility, financial and otherwise, for the Land upon title transfer.
+
+6.	Insurance: Seller agrees to maintain a hazard insurance policy on the Land of no less than [{insuraceAmount}] until the completion of the payment plan, at which point any insurance becomes the responsibility of Buyer.
+
+7.	Taxes: All taxes on the Land shall be the responsibility of Buyer as of the date of this Contract.
+
+8.	ADDITIONAL TERMS:
+
+[{additionalTerms}]
+
+This Contract is executed on the [{executionDate}]. 
+
+We, the undersigned, agree to this Contract and all its terms.
+

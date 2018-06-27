@@ -1,0 +1,34 @@
+namespace org.accordproject.landsale
+
+import org.accordproject.cicero.contract.* from https://models.accordproject.org/cicero/contract.cto
+import org.accordproject.cicero.runtime.* from https://models.accordproject.org/cicero/runtime.cto
+import org.accordproject.money.MonetaryAmount from https://models.accordproject.org/money.cto
+import org.accordproject.time.Duration from https://models.accordproject.org/time.cto
+
+/**
+ * The template model
+ */
+asset LandSaleContract extends AccordContract {
+  o String address
+  o String city
+  o String county
+  o String state
+  o String details
+  o DateTime executionDate
+  o MonetaryAmount amount
+  o MonetaryAmount downpayment
+  o MonetaryAmount monthlyPayment
+  o Double interestRate
+  o String interestRateCalculationMechanism
+  o DateTime firstPaymentDate
+  o Integer paymentDayOfMonth
+  o MonetaryAmount lateFee
+  o Duration latePaymentDuration
+  o DateTime endOfContract
+  o Double endPercentage
+  o MonetaryAmount endLateFee
+  o Integer daysLate
+  o Integer missedPayments
+  o MonetaryAmount insuraceAmount
+  o String additionalTerms
+}
